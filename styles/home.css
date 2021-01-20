@@ -1,1 +1,44 @@
-/* add home page styles here */
+body {
+  background-image: url("../assets/minecraft-wall.png");
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.viewer {
+  height: calc(100vh - 115px);
+  width: calc(100vw - 100px);
+  margin: 0 auto;
+  display: block;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  height: 120px;
+  width: 100%;
+}
+
+footer span {
+  display: flex;
+  justify-content: center;
+}
+
+.git {
+  width: 170px;
+}
+
+.gitabove {
+  width: 170px;
+}
+
+.gitabove img {
+  height: 40px;
+  width: 40px;
+  margin: 5px;  
+}
