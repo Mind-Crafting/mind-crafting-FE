@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/home.css">
+    <title>Prismarine Viewer</title>
+</head>
+<body>
+    <header>
+        <img class="torch" src="assets/torch.gif"/>
+        <img class="main-logo" src="assets/Sample.png"/>
+        <img class="torch" src="assets/torch.gif"/>
+    </header>
+    <main>
+        <section id="players" class="players">
+            <label>
+                <input id="choice" name="choice" value="http://ec2-3-129-43-241.us-east-2.compute.amazonaws.com:3000" type="radio" display="none" checked />
+                <img src="assets/player1.png" width="200px" alt="player 1">
+            </label>
+            <label>
+                <input id="choice2" name="choice" value="http://ec2-3-129-43-241.us-east-2.compute.amazonaws.com:3001" type="radio" display="none" />
+                <img src="assets/player2.png" width="200px" alt="player 2">
+            </label>
+        </section>
+        <section>
+            <iframe id="viewer" class="viewer" src="" target="_parent">
+            </iframe>
+        </section>
+    </main>
+    <footer>
+        <span>
+            <div class="gitabove inblock">
+                Sam Formichella
+                <div class="git inblock">
+                <a href="https://github.com/sformichella">
+                    <img src="assets/github.png" alt='github'/>
+                </a>
+                <a href="https://www.linkedin.com/in/sam-formichella/">
+                    <img src="assets/linkedin.png" alt='linkedin'/>
+                </a>
+                </div>
+            </div>
+            <div class="gitabove inblock">
+                Ryan Carreras
+                <div class="git inblock">
+                <a href="https://github.com/ryanleviathan">
+                    <img src="assets/github.png" alt='github'/>
+                </a>
+                <a href="https://www.linkedin.com/in/ryancarreras/">
+                    <img src="assets/linkedin.png" alt='linkedin'/>
+                </a>
+                </div>
+            </div>
+            <div class="gitabove inblock">
+                Donny Vu
+                <div class="git inblock">
+                <a href="https://github.com/DonnyLVu">
+                    <img src="assets/github.png" alt='github'/>
+                </a>
+                <a href="https://www.linkedin.com/in/donnylvu/">
+                    <img src="assets/linkedin.png" alt='linkedin'/>
+                </a>
+                </div>
+            </div>
+            <div class="gitabove inblock">
+                Ray Sakultarawattn
+                <div class="git inblock">
+                <a href="https://github.com/RSakultarawattn">
+                    <img src="assets/github.png" alt='github'/>
+                </a>
+                <a href="https://www.linkedin.com/in/raysakultarawattn/">
+                    <img src="assets/linkedin.png" alt='linkedin'/>
+                </a>
+                </div>
+            </div>
+        </span>
+    </footer>
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
