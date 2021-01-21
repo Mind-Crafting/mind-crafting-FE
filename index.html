@@ -15,20 +15,18 @@
         <img class="torch" src="assets/torch.gif"/>
     </header>
     <main>
-        <section class="player-side">
-            <!-- <label>
-                player 1
-                <input name="choice" value="3000" type="radio" display="none" />
-                <img src="assets/player1.png" alt="player 1">
+        <section id="players" class="players">
+            <label>
+                <input id="choice" name="choice" value="http://ec2-3-129-43-241.us-east-2.compute.amazonaws.com:3000" type="radio" display="none" checked />
+                <img src="assets/player1.png" width="200px" alt="player 1">
             </label>
             <label>
-                player 2
-                <input name="choice" value="3001" type="radio" display="none" />
-                <img src="assets/player2.png" alt="player 2">
-            </label> -->
+                <input id="choice2" name="choice" value="http://ec2-3-129-43-241.us-east-2.compute.amazonaws.com:3001" type="radio" display="none" />
+                <img src="assets/player2.png" width="200px" alt="player 2">
+            </label>
         </section>
         <section>
-            <iframe class="viewer" src="http://ec2-3-129-43-241.us-east-2.compute.amazonaws.com:3000" target="_parent">
+            <iframe id="viewer" class="viewer" src="" target="_parent">
             </iframe>
         </section>
     </main>

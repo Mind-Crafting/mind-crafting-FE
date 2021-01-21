@@ -1,5 +1,7 @@
 body {
   background-image: url("../assets/minecraft-wall.png");
+  height: 100%;
+  width: 100%;
 }
 
 header {
@@ -9,7 +11,7 @@ header {
 }
 
 .viewer {
-  height: calc(100vh - 115px);
+  height: calc(100vh - 350px);
   width: calc(100vw - 100px);
   margin: 0 auto;
   display: block;
@@ -27,6 +29,7 @@ footer {
 footer span {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .git {
@@ -41,4 +44,27 @@ footer span {
   height: 40px;
   width: 40px;
   margin: 5px;  
+}
+
+.players {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+[type=radio] { 
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+[type=radio] + img {
+  cursor: pointer;
+}
+
+[type=radio]:checked + img {
+  -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.9));
+  filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.9));
 }
